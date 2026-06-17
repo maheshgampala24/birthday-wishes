@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy 19th Birthday | Hyma Sri Vyshnavi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="globalParticleEngine"></canvas>
+
+    <div class="luxury-audio-nexus">
+        <div class="audio-hud-card">
+            <button id="masterAudioToggle" class="nexus-circle-btn" aria-label="Play Magical Track">
+                <span class="btn-state-icon">🎵</span>
+                <div class="wave-equalizer-bars">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </button>
+            <div class="audio-controls-hidden-drawer">
+                <div class="volume-slider-track">
+                    <div id="volumeLevelFill" class="volume-level-fill"></div>
+                </div>
+                <div class="audio-progress-bar">
+                    <div id="audioProgressFill" class="audio-progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cinematicLoader" class="fullscreen-loader-overlay">
+        <div class="loader-central-vault">
+            <div class="royal-cake-animation">
+                <div class="crown-crest">👑</div>
+                <div class="cake-tier-3d base-tier"></div>
+                <div class="cake-tier-3d mid-tier"></div>
+                <div class="cake-tier-3d peak-tier"></div>
+                <div class="master-candle">
+                    <div class="glowing-plasma-flame micro-pulse"></div>
+                </div>
+            </div>
+            <h2 class="loader-announcement">🎂 Preparing A Birthday Surprise 🎂</h2>
+            <div class="linear-progress-container">
+                <div id="experienceProgressFill" class="linear-progress-fill"></div>
+            </div>
+            <div id="digitalPercentDisplay" class="digital-percent-counter">0%</div>
+        </div>
+    </div>
+
+    <main id="luxuryCanvasWrapper" class="experience-hidden">
+
+        <section id="heroCanvas" class="viewport-hero-section">
+            <div class="aurora-borealis-canopy"></div>
+            <div class="structural-hero-grid section-max-width">
+                
+                <div class="hero-image-perspective reveal-fade-up">
+                    <div class="royal-portrait-frame dynamic-mouse-tilt" data-tilt-factor="12">
+                        <div class="neon-border-glow-ring"></div>
+                        <div class="image-mask-bounds">
+                            <img src="hyma_1.jpg" alt="Hyma Sri Vyshnavi Elegant Blue Portrait" class="master-hero-asset">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-contextual-column">
+                    <span class="royal-salutation reveal-fade-down">🎉 HAPPY 19TH BIRTHDAY 🎉</span>
+                    <h1 class="empress-title reveal-zoom-in">
+                        <span class="text-gold-shimmer">HYMA SRI</span>
+                        <span class="text-princess-neon">VYSHNAVI</span>
+                    </h1>
+                    <p class="poetic-epilogue reveal-fade-up">
+                        "Today is a celebration of your smile, dreams, kindness, and the beautiful person you are."
+                    </p>
+                    
+                    <button id="initiateJourneyBtn" class="luxury-action-btn reveal-fade-up">
+                        <span class="btn-laser-shimmer"></span>
+                        <span class="btn-label-text">✨ Begin Celebration</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="downward-navigation-mouse">
+                <div class="mouse-wheel-node"></div>
+            </div>
+        </section>
+
+        <section id="chronomatrixSection" class="section-padding-global">
+            <div class="section-max-width">
+                <h2 class="canonic-section-heading center-aligned-text text-gold-shimmer">Temporal Metrics</h2>
+                
+                <div class="metrics-bento-grid">
+                    <div class="bento-glass-card age-tracker-card reveal-fade-left">
+                        <div class="card-icon-header">🌸</div>
+                        <h3>Life Journey Matrix</h3>
+                        <div class="counter-flex-row" id="liveAgeEngine">
+                            <div class="counter-node-block"><span id="matrixYears" class="counter-digit">00</span><span class="counter-label">Years</span></div>
+                            <div class="counter-node-block"><span id="matrixMonths" class="counter-digit">00</span><span class="counter-label">Months</span></div>
+                            <div class="counter-node-block"><span id="matrixDays" class="counter-digit">00</span><span class="counter-label">Days</span></div>
+                        </div>
+                        <p class="bento-card-footer-text">Illuminating the world since June 18, 2007.</p>
+                    </div>
+
+                    <div class="bento-glass-card countdown-tracker-card reveal-fade-right">
+                        <div class="card-icon-header">⏳</div>
+                        <h3>Countdown To Next Birthday</h3>
+                        <div class="counter-flex-row" id="countdownEngine">
+                            <div class="counter-node-block"><span id="timeDays" class="counter-digit">00</span><span class="counter-label">Days</span></div>
+                            <div class="counter-node-block"><span id="timeHours" class="counter-digit">00</span><span class="counter-label">Hours</span></div>
+                            <div class="counter-node-block"><span id="timeMins" class="counter-digit">00</span><span class="counter-label">Minutes</span></div>
+                            <div class="counter-node-block"><span id="timeSecs" class="counter-digit">00</span><span class="counter-label">Seconds</span></div>
+                        </div>
+                        <p class="bento-card-footer-text">Anticipating the initialization of a new chapter.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="narrativeProseSection" class="section-padding-global deep-dark-override">
+            <div class="section-max-width trigger-stream-hook">
+                <div class="prose-monolithic-hull">
+                    <h2 class="prose-glowing-title">Happy 19th Birthday Hyma Sri Vyshnavi ❤️</h2>
+                    <div id="typewriterOutputNode" class="typewriter-prose-viewport"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="curatedGallerySection" class="section-padding-global">
+            <div class="section-max-width">
+                <h2 class="canonic-section-heading center-aligned-text">📸 Beautiful Memories</h2>
+                
+                <div class="masonry-structural-layout">
+                    <div class="masonry-brick-card image-interactive-trigger reveal-fade-up" data-media-target="hyma_1.jpg">
+                        <div class="brick-inner-canvas">
+                            <img src="hyma_1.jpg" alt="Hyma Sri Vyshnavi Elegant Blue Gown Close Up" class="brick-img-node">
+                            <div class="brick-blur-shroud">
+                                <span class="action-tag">🔍 Expand Portrait</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry-brick-card image-interactive-trigger reveal-fade-up" data-media-target="hyma_2.jpg">
+                        <div class="brick-inner-canvas">
+                            <img src="hyma_2.jpg" alt="Hyma Sri Vyshnavi Butterfly Wings Concept Pose" class="brick-img-node">
+                            <div class="brick-blur-shroud">
+                                <span class="action-tag">🔍 Expand Portrait</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="masonry-brick-card image-interactive-trigger reveal-fade-up" data-media-target="hyma_3.jpg">
+                        <div class="brick-inner-canvas">
+                            <img src="hyma_3.jpg" alt="Hyma Sri Vyshnavi Elegant Traditional Saree Motion" class="brick-img-node">
+                            <div class="brick-blur-shroud">
+                                <span class="action-tag">🔍 Expand Portrait</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="chronicleTimelineSection" class="section-padding-global">
+            <div class="section-max-width">
+                <h2 class="canonic-section-heading center-aligned-text">✨ Beautiful Moments ✨</h2>
+                
+                <div class="timeline-backbone-spine">
+                    
+                    <div class="timeline-card-wrapper node-left reveal-fade-left">
+                        <div class="timeline-glass-hull dynamic-mouse-tilt">
+                            <span class="timeline-emoji-crest">🌸</span>
+                            <h4>Beautiful Smile</h4>
+                            <p>An infectious radiance that lifts every environment and brightens paths.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card-wrapper node-right reveal-fade-right">
+                        <div class="timeline-glass-hull dynamic-mouse-tilt">
+                            <span class="timeline-emoji-crest">💖</span>
+                            <h4>Happiness</h4>
+                            <p>Spreading authentic joy and creating unforgettable laughter-filled memories.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card-wrapper node-left reveal-fade-left">
+                        <div class="timeline-glass-hull dynamic-mouse-tilt">
+                            <span class="timeline-emoji-crest">✨</span>
+                            <h4>Dreams</h4>
+                            <p>Aspiring to sky-high goals with unyielding determination and focus.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card-wrapper node-right reveal-fade-right">
+                        <div class="timeline-glass-hull dynamic-mouse-tilt">
+                            <span class="timeline-emoji-crest">🎓</span>
+                            <h4>Success</h4>
+                            <p>Conquering academic and life challenges with poise, brilliance, and intellect.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card-wrapper node-left reveal-fade-left">
+                        <div class="timeline-glass-hull dynamic-mouse-tilt">
+                            <span class="timeline-emoji-crest">🌈</span>
+                            <h4>Adventures</h4>
+                            <p>Stepping bravely into the beautiful, winding chapters of an evolving journey.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card-wrapper node-right reveal-fade-right">
+                        <div class="timeline-glass-hull dynamic-mouse-tilt">
+                            <span class="timeline-emoji-crest">⭐</span>
+                            <h4>Bright Future</h4>
+                            <p>Stepping into adulthood with unlimited opportunities waiting to be claimed.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="carousel3DSection" class="section-padding-global space-overflow-lock">
+            <div class="section-max-width continuous-carousel-stage">
+                <h2 class="canonic-section-heading center-aligned-text">Infinite Wishes For You</h2>
+                
+                <div class="carousel-3d-ambient-box">
+                    <div id="carouselRotatorRing" class="carousel-rotator-ring">
+                        </div>
+                </div>
+
+                <div class="nexus-grand-celebration-trigger">
+                    <button id="globalCelebrateTrigger" class="luxury-action-btn core-pulse-loop">
+                        <span class="btn-label-text">🎉 Celebrate Birthday</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="interactiveCakeSection" class="section-padding-global core-flex-alignment-center">
+            <div class="cake-arena-glass-hull section-max-width reveal-zoom-in">
+                <h3 class="interactive-instructional-text">Interact to Blow Out her 19 Candles</h3>
+                
+                <div class="viewport-3d-cake-stage">
+                    <div id="structuralCake3D" class="structural-cake-3d-mesh">
+                        <div class="cake-cylinder-layer structural-layer-bottom"></div>
+                        <div class="cake-cylinder-layer structural-layer-mid"></div>
+                        <div class="cake-cylinder-layer structural-layer-top"></div>
+                        <div id="candleGeometricAnchor" class="candle-geometric-anchor"></div>
+                    </div>
+                </div>
+
+                <div class="cake-action-row">
+                    <button id="extinguishCandlesBtn" class="luxury-action-btn pink-accent-override">
+                        <span class="btn-label-text">🎂 Blow The Candles</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="surpriseGiftSection" class="section-padding-global core-flex-alignment-center">
+            <div class="gift-box-perspective-node reveal-zoom-in">
+                <div id="giftInteractiveMesh" class="gift-box-3d-mesh">
+                    <div class="gift-lid-node"></div>
+                    <div class="gift-body-node"></div>
+                </div>
+                <button id="openGiftTriggerBtn" class="luxury-action-btn gold-accent-override">
+                    <span>🎁 Open Surprise Gift</span>
+                </button>
+            </div>
+        </section>
+
+        <div id="royalGiftModal" class="modal-viewport-shroud hidden-modal-state">
+            <div class="modal-glass-container-card">
+                <button id="dismissModalBtn" class="dismiss-modal-trigger">&times;</button>
+                <div class="modal-personalized-body">
+                    <span class="empress-crest-badge">👑</span>
+                    <p class="princess-epistolary-text">
+                        "Dear Hyma Sri Vyshnavi ❤️<br><br>
+                        You are truly special.<br>
+                        May your life always be filled with happiness, love, success, beautiful memories, and endless blessings.<br><br>
+                        <strong>Happy 19th Birthday Princess 👑🎂</strong>"
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="masterLightboxPlatform" class="lightbox-viewport-shroud hidden-modal-state">
+            <span id="closeLightboxTrigger" class="lightbox-dismiss-x">&times;</span>
+            <img id="lightboxTargetMediaCanvas" src="" alt="Enlarged Luxury View Frame" class="lightbox-enlarged-element">
+        </div>
+
+        <footer class="luxury-princess-footer">
+            <div class="footer-blend-divider"></div>
+            <p class="footer-credit-line">Made With ❤️ For</p>
+            <h3 class="footer-recipient-name">HYMA SRI VYSHNAVI</h3>
+            <p class="footer-celebration-title">Happy 19th Birthday 🎂</p>
+            <p class="footer-birth-date">18 June 2007</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
