@@ -1,0 +1,23 @@
+{
+  "name": "birthday-wishes",
+  "version": "1.0.0",
+  "description": "A beautiful birthday celebration website with Vercel Web Analytics",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maheshgampala24/birthday-wishes.git"
+  },
+  "keywords": ["birthday", "celebration", "web", "analytics"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maheshgampala24/birthday-wishes/issues"
+  },
+  "homepage": "https://github.com/maheshgampala24/birthday-wishes#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
